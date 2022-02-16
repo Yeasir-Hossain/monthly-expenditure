@@ -7,8 +7,22 @@ body {
     font-family: 'Roboto';
 }
 
+
+/* heading section  */
+
 .heading {
     font-family: 'Montserrat';
+}
+
+#diff_color {
+    color: #00EC58;
+}
+
+
+/* statements section */
+
+.statement {
+    background-color: #F8F8F8;
 }
 
 
