@@ -10,3 +10,40 @@ body {
 .heading {
     font-family: 'Montserrat';
 }
+
+
+/* income,expense and savings headers  */
+
+.field_headers {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+/* input field headers  */
+
+.input_headers {
+    width: 25%;
+    margin-right: 3%;
+    text-align: right;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+/* input field color */
+
+.input_field {
+    background-color: #DCDCDC;
+}
+
+
+/* button texts */
+
+.button_text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}

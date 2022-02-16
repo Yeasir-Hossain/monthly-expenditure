@@ -7,18 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/custom_styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Income Statement</title>
 </head>
 
-<body>
+<body class="container">
+    <!-- Header start -->
     <header class="my-5">
         <h1 class="heading text-center">Monthly Income Statement 💰</h1>
     </header>
+    <!-- header end -->
+    <!-- main  start -->
     <main>
-        <section>
-
+        <!-- statements section start -->
+        <section class="statements my-5">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <img class="img-fluid" src="images/money.png" alt="" srcset="">
+                    </div>
+                    <div class="col text-center justify-content-center">
+                        <div class="p-3 field_headers my-3">INCOME</div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="input_headers">Income:</h6>
+                            <input class="p-1 rounded border-0 input_field" type="text">
+                        </div>
+                        <div class="p-3 field_headers my-3">EXPENSES</div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="input_headers ">Food:</h6>
+                            <input class="my-3 p-1 rounded border-0 input_field" type="text">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="input_headers ">Rent:</h6>
+                            <input class="my-3 p-1 rounded border-0 input_field" type="text">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="input_headers">Clothes:</h6>
+                            <input class="my-3 p-1 rounded border-0 input_field" type="text">
+                        </div>
+                        <div>
+                            <button class="btn-primary border-0 my-3 rounded-1 px-5 py-2 button_text">Calculate</button>
+                        </div>
+                        <div class="expense my-3">
+                            <div>
+                                <p class="field_headers">Total expense: <span>00</span> </p>
+                            </div>
+                            <div>
+                                <p class="field_headers">Balance: <span>00</span> </p>
+                            </div>
+                        </div>
+                        <!-- savings part  -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="input_headers ">Save:</h6>
+                            <input class=" mx-2 my-3 p-1 rounded border-0 input_field" type="text">
+                            <h6>%</h6>
+                            <button class="btn-primary border-0 mx-2 my-3 rounded-1 px-5 py-2 button_text">Save</button>
+                        </div>
+                        <div class="saving my-3">
+                            <div>
+                                <p class="field_headers">Saving Amount: <span>00</span> </p>
+                            </div>
+                            <div>
+                                <p class="field_headers">Remaining Balance: <span>00</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- statements section end -->
     </main>
+    <!-- main  start -->
+    <!-- script links  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
