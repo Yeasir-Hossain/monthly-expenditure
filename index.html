@@ -21,8 +21,8 @@
     <main>
         <!-- statements section start -->
         <section class="statements my-5">
-            <div class="container px-4">
-                <div class="row gx-5">
+            <div class="container px-4 ">
+                <div class="row row-cols-lg-2 row-cols-sm-1 row-cols-md-1 gx-5">
                     <div class="col">
                         <img class="img-fluid" src="images/money.png" alt="" srcset="">
                     </div>
@@ -48,34 +48,35 @@
                         <div>
                             <button id="calculate" class="btn-primary border-0 my-3 rounded-1 px-5 py-2 button_text">Calculate</button>
                         </div>
-                        <div class="expense my-3">
+                        <div id="expense" class="my-3">
                             <div>
                                 <p class="field_headers">Total expense: <span id="total-expense">00</span> </p>
                             </div>
                             <div>
                                 <p class="field_headers">Balance: <span id="balance">00</span> </p>
                             </div>
-                            <div class="expense-exceed d-none">
-                                <h2>You exceeded your total monthly income</h2>
-                            </div>
                         </div>
+                        <div id="exceed" class="text-danger">
+                            <h2>You exceeded your total monthly income</h2>
+                        </div>
+
                         <!-- savings part  -->
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center flex-lg-row flex-md-column flex-sm-column">
                             <h6 class="input_headers ">Save:</h6>
                             <input id="save-field" class=" mx-2 my-3 p-1 rounded border-0 input_field" type="text">
                             <h6>%</h6>
                             <button id="save" class="btn-primary border-0 mx-2 my-3 rounded-1 px-5 py-2 button_text">Save</button>
                         </div>
-                        <div class="saving my-3">
+                        <div id="saving" class="my-3">
                             <div>
                                 <p class="field_headers">Saving Amount: <span id="saving-amount">00</span> </p>
                             </div>
                             <div>
                                 <p class="field_headers">Remaining Balance: <span id="remaining-balance">00</span> </p>
                             </div>
-                            <div class="supply-exceed d-none">
-                                <h2>You exceeded your total monthly income</h2>
-                            </div>
+                        </div>
+                        <div id="supply-exceed" class="text-danger">
+                            <h2>Not enough money for savings</h2>
                         </div>
                     </div>
                 </div>
