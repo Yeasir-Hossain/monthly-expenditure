@@ -1,7 +1,10 @@
+// display none of error messages 
 const exceedMessage = document.getElementById('exceed');
 exceedMessage.style.display = 'none';
 const supplyexceedMessage = document.getElementById('supply-exceed');
 supplyexceedMessage.style.display = 'none';
+
+// case handler for inputs 
 
 function casehandler(name, input) {
     if (isNaN(input) == true) {
